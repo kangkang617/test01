@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="test02-webapp-maven:war exploded">
+    <output-path>$PROJECT_DIR$/../test02-webapp-maven/target/test02-webapp-maven</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>test02-webapp-maven</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="test02-webapp-maven" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../test02-webapp-maven/target/test02-webapp-maven/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="test02-webapp-maven/web/Web" />
+    </root>
+  </artifact>
+</component>
